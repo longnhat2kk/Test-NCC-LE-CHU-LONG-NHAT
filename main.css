@@ -37,7 +37,7 @@
 
 @media (min-width: 768px) {
     .container {
-        width: 750px;
+        width: 648px;
     }
 }
 
@@ -202,7 +202,7 @@ img {
 }
 
 #close-icon div {
-    width: 35px;
+    width: 25px;
     height: 4px;
     background-color: white;
     margin-bottom: 6px;
@@ -214,4 +214,8 @@ img {
 
 #close-icon div:last-child {
     transform: rotate(-45deg);
+}
+
+#close-icon {
+    display: none;
 }

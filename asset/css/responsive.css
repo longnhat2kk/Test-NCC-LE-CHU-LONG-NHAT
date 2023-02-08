@@ -1,7 +1,6 @@
 /* PC */
 @media (min-width: 1024px) {
 
-    .w-ncc-web .bg,
     .menu-mobile {
         display: none;
     }
@@ -16,8 +15,17 @@
 
 /* Tablet */
 @media (min-width:740px) and (max-width: 1023px) {
-    .w-ncc-web .bg {
-        display: none;
+    .w-ncc-web {
+        grid-template-columns: 20% 80%;
+    }
+
+    .w-ncc-web .main .main-content .content-lists {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .w-ncc-web .main .main-content a {
+        display: block !important;
     }
 }
 
@@ -36,7 +44,8 @@
         left: 0;
         top: 0;
         width: 70vw;
-        display: none;
+        transform: translateX(-20rem);
+        transition: all .5s;
         z-index: 999;
     }
 
@@ -88,7 +97,7 @@
     }
 
     .w-ncc-web .nav.show {
-        display: block;
+        transform: translateX(0);
     }
 
     .w-ncc-web .nav li:first-child {
@@ -99,5 +108,13 @@
 
     #close-icon div {
         margin: -0.2rem;
+    }
+
+    #close-icon {
+        display: block;
+    }
+
+    .w-ncc-web .bg.show {
+        display: block;
     }
 }
